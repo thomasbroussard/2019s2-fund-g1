@@ -1,11 +1,14 @@
 package fr.epita.quiz.tests;
 
 import fr.epita.quiz.datamodel.MCQQuestion;
+import fr.epita.quiz.services.data.Configuration;
 import fr.epita.quiz.services.data.MCQQuestionDAO;
 
 public class TestMCQQuestionCSVDAO {
 
 	public static void main(String[] args) {
+		
+		
 		//given
 		MCQQuestion question = new MCQQuestion();
 		question.setDifficulty(3);

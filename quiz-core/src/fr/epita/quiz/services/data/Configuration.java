@@ -12,7 +12,8 @@ public class Configuration {
 	private static boolean isInit = false;
 
 	public static void init() throws FileNotFoundException, IOException {
-		properties.load(new FileInputStream(new File("conf.properties")));
+		String location = System.getProperty("conf.location");
+		properties.load(new FileInputStream(new File(location)));
 		isInit = true;
 	}
 
